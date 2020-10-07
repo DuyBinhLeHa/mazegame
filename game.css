@@ -1,0 +1,48 @@
+body {
+  background: url("bggame.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+table {
+    width: 818px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+td {
+	width: 64px;
+	height: 64px;
+	background-color: #22DD11;
+}
+
+a { 
+	color: white;
+	text-decoration: none;
+}
+
+.wall {
+	background-image: url("brick-wall.png");
+}
+
+.pos_mario {
+	width: 60px;
+	height: 60px;
+	border: 2px blue solid;
+	border-radius: 200px;
+	background-image: url("mario.jpg");
+}
+
+.go {
+	text-align: center;
+	-webkit-animation: affection 5s infinite;
+    -webkit-animation-timing-function: ease-in-out;	
+}
+
+@-webkit-keyframes affection {
+    0% {background-color: #22DD11}
+	25% {background-color: red}
+    50% {background-color: yellow}
+	75% {background-color: blue}
+	100% {background-color: #22DD11}
+}
